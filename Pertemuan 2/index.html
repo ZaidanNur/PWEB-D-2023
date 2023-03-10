@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dasar</title>
+    <style>
+        *{
+            margin: 1em;
+        }
+        p{
+            font-size: large;
+        }
+        body{
+            padding: 3em 10em 0em 10em;
+        }
+        th{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        #center{
+            text-align: center;
+        }
+        .large{
+            font-size: large;
+        }
+        .xl{
+            font-size: xx-large;
+        }
+        .square-code{
+            font-size: larger;
+            width: auto;
+            background-color: gray;
+            color: white;
+            padding: 3em 3em 3em 3em;
+        }
+    </style>
+</head>
+<body style="">
+    <h1 id="center">HTML</h1>
+    <p class="large">Hyper Text Markup Language</p>
+    <p>HTML terdiri dari beberapa bagian yang biasanya disebut dengan HTML element yang diawali dengan tag pembuka diakhiri dengan tag penutup</p>
+    <p>Berikut merupakan element root yang bisa kita buat untuk menginisiasi dokumen HTML</p>
+    <div class="square-code">
+        <code class="large">
+                &lt;!DOCTYPE html&gt; [Mark untuk dokumen HTML5] <br>
+                &lt;html&gt; [Root element dari html] <br>
+                &lt;head&gt; [Berisikan informasi terkait dokumen html] <br>
+                &lt;title&gt;Title&lt;/title&gt; [Judul dari dokumen html] <br>
+                &lt;/head&gt; <br>
+                &lt;body&gt; [Bagian isi dari dokumen yang nanti akan ditampilkan] <br>
+                &lt;/body&gt; <br>
+                &lt;/html&gt; <br>
+            </code>
+    </div>
+    <p>Ada banyak elemen HTML yang ada</p>
+    <a href="https://www.w3schools.com/TAGS/ref_byfunc.asp">Bisa kalian cek disini</a>
+    <h3>Hal yang akan dibahas</h3>
+    <ul>
+        <li>
+            Element
+        </li>
+        <li>
+            Selector
+        </li>
+    </ul>
+    <div class="xl"> Elements</div>
+    <p>Element terdiri dari 2 yaitu element basic (open-close tag) dan void element (open tag)</p>
+    <p>Element: <code>&lt;p&gt;&lt;/p&gt;,&lt;h1&gt;&lt;/h1&gt;,</code> dst</p>
+    <p>Void Element:  <code> &lt;/br&gt;, &lt;img&gt;, </code> dst</p>
+    <h1>Heading</h1>
+    <p>Digunakan untuk indeks heading dari 1 hingga 6</p>
+    <div class="square-code">
+        <h1>Heading <code>&lt;h1&gt;&lt;/h1&gt;</code></h1>
+        <h2>Heading <code>&lt;h2&gt;&lt;/h2&gt;</code></h2>
+        <h3>Heading <code>&lt;h3&gt;&lt;/h3&gt;</code></h3>
+        <h4>Heading <code>&lt;h4&gt;&lt;/h4&gt;</code></h4>
+        <h5>Heading <code>&lt;h5&gt;&lt;/h5&gt;</code></h5>
+        <h6>Heading <code>&lt;h6&gt;&lt;/h6&gt;</code></h6>
+    </div>
+    <h1>Paragraph <code>  &lt;p&gt;&lt;/p&gt;</code></h1>
+    <p>Untuk penulisan paragraf</p>
+    <div class="square-code">
+        <code> &lt;p&gt; <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi laboriosam corrupti! Cum sunt mollitia autem suscipit, voluptate porro. Iste rem in quibusdam. Iure pariatur libero inventore suscipit! Quas, doloremque.
+            <br>&lt;/p&gt;
+        </code>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi laboriosam corrupti! Cum sunt mollitia autem suscipit, voluptate porro. Iste rem in quibusdam. Iure pariatur libero inventore suscipit! Quas, doloremque.
+        </p>
+    </div>
+    <h1 style="color: salmon;"> Image <code>  &lt;img&gt;</code></h1>
+    <p>Untuk load image</p>
+    <div class="square-code">
+        <p>
+            <code> &lt;img src="https://i.pinimg.com/564x/a4/23/a2/a423a2299b31b12b2480a8e6e56a8bc1.jpg" alt="Gambar"&gt; </code>
+            
+        </p>
+        <p>
+            src = sumber / direktori dari image <br>
+            alt = alternatif keterangan tulisan apabila image tidak ditemukan
+        </p>
+        <img src="C:\Users\zaixy\OneDrive\Documents\Asdos\PWEB\WhatsApp Image 2023-01-16 at 15.24.18.jpg" alt="Gambar">
+        <iframe src="https://assets.pinterest.com/ext/embed.html?id=797489046537413779" height="503" width="345" frameborder="0" scrolling="no" ></iframe>
+    </div>
+    
+    <h1> List <code>   </code></h1>
+    <ul>
+        <li>List dengan pengurutan (ordered list)</li>
+        <p><code>&lt;ol&gt;&lt;/ol&gt;</code></p>
+        <li>List tanpa pengurutan (unordered list)</li>
+        <p><code>&lt;ul&gt;&lt;/ul&gt;</code></p>
+    </ul>
+    <div class="square-code">
+        <p><code>
+            &lt;ol&gt; <br>
+            &lt;li&gt;Text&lt;/li&gt; <br>
+            &lt;li&gt;Text&lt;/li&gt; <br>
+            &lt;li&gt;Text&lt;/li&gt; <br>
+            &lt;/ol&gt; 
+        </code></p>
+        <ol type="A">
+            <li>Text</li>
+            <li>Text</li>
+            <li>Text</li>
+        </ol>
+        <p><code>
+            &lt;ul&gt; <br>
+            &lt;li&gt;Text&lt;/li&gt; <br>
+            &lt;li&gt;Text&lt;/li&gt; <br>
+            &lt;li&gt;Text&lt;/li&gt; <br>
+            &lt;/ul&gt; 
+        </code></p>
+        <ul style="list-style-type: none;">
+            <li>Text</li>
+            <li>Text</li>
+            <li>Text</li>
+        </ul>
+    </div>
+    <h1> Link <code>&lt;a&gt;&lt;/a&gt;</code></h1>
+    <p>Mencantumkan tautan</p>
+    <div class="square-code">
+        <p><code>&lt;a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"&gt;Klik Link Ini&lt;/a&gt;</code></p>
+        <p>href = alamat tautan yang dituju</p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_top">Klik Link Ini</a>
+    </div>
+    <h1> Tabel <code>&lt;table&gt;&lt;/table&gt;</code></h1>
+    <p>Membuat tabel</p>
+    <div class="square-code">
+        <p><code>
+            &lt;table&gt;<br>
+                &lt;thead&gt;<br>
+                    &lt;tr&gt;<br>
+                        &lt;th&gt;Header&lt;/th&gt;<br>
+                        &lt;th&gt;Header&lt;/th&gt;<br>
+                        &lt;th&gt;Header&lt;/th&gt;<br>
+                    &lt;/tr&gt;<br>
+                &lt;/thead&gt;<br>
+                &lt;tbody&gt;<br>
+                    &lt;tr&gt;<br>
+                        &lt;td&gt;Cell&lt;/td&gt;<br>
+                        &lt;td&gt;Cell&lt;/td&gt;<br>
+                        &lt;td&gt;Cell&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;tr&gt;<br>
+                        &lt;td&gt;Cell&lt;/td&gt;<br>
+                        &lt;td&gt;Cell&lt;/td&gt;<br>
+                        &lt;td&gt;Cell&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                &lt;/tbody&gt;<br>
+            &lt;/table&gt;<br>
+        </code></p>
+        <p><code>&lt;thead&gt; = Grouping head dari tabel</code></p>
+        <p><code>&lt;tbody&gt; = Grouping body dari tabel</code></p>
+        <p><code>&lt;tr&gt; = Define row dari tabel</code></p>
+        <p><code>&lt;td&gt; = Define cell dari tabel</code></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h1> Form dan Input <code></code></h1>
+    <p>Masukan dan submission</p>
+    <div class="square-code">
+        <p><code>
+            &lt;form action="index.html"&gt;<br>
+                &lt;label for="nama"&gt;Nama&lt;/label&gt;<br>
+                &lt;input type="text" id="nama"&gt;<br>
+                &lt;label for="kelas"&gt;Kelas&lt;/label&gt;<br>
+                &lt;input type="text" id="kelas"&gt;<br>
+                &lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                &lt;label for="alasan"&gt;Alasan Pengunduran diri&lt;/label&gt; <br>
+                &lt;textarea name="" id="alasan" cols="30" rows="5"&gt;&lt;/textarea&gt; <br>
+            &lt;/form&gt;<br>
+        </code></p>
+        <p><code>action = tujuan pengiriman data</code></p>
+        <p><code>&lt;label&gt; = label / nama untuk inputan</code></p>
+        <p><code>for = tujuan input (id dari input)</code></p>
+        <p><code>&lt;input&gt; = area untuk submission</code></p>
+        <p><code>type = tipe masukan dari input</code></p>
+        <p><code>id = id dari inputan</code></p>
+        <p><code>&lt;textarea&gt; = area masukan yang lebih ke deskripsi</code></p>
+        <p><code>name = keterangan inputan</code></p>
+        <p><code>cols dan row = luas dari area masukan</code></p>
+        <p><code>&lt;button&gt; = tombol</code></p>
+        <p><code>type = fungsi tombol</code></p>
+        <form action="index.html">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama">
+            <label for="kelas">Kelas</label>
+            <input type="text" id="kelas"><br>
+            <label for="alasan">Alasan Pengunduran diri</label>
+            <textarea name="" id="alasan" cols="30" rows="5"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <h1> Script <code>&lt;script&gt;</code></h1>
+    <p>Integrasi dengan javascript</p>
+    <div class="square-code">
+        <p><code>
+        &lt;script&gt;
+            console.log("Ini script")
+        &lt;/script&gt;
+        </code></p>
+        <script>
+            console.log("Ini script")
+        </script>
+        <p>Outputnya lihat di Inspect Element bagian Console</p>
+    </div>
+    <h1> Style <code>&lt;style&gt;</code></h1>
+    <p>Menggunakan css pada html</p>
+    <p style="color: red;">Letaknya ada pada head, bukan body</p>
+    <p>*contoh ada di bagian Selector</p>
+
+    <div class="xl">Selector</div>
+    <p>Selector berfungsi untuk filter penggunaan css pada element tertentu</p>
+    <div class="square-code">
+        <p><code>
+            &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                <p>Universal Selector <br>
+                Selector yang mempengaruhi seluruh dokumen (tanda *)</p>
+                *{
+                    margin:0px
+                } <br>
+                <p>Element Selector <br>
+                Selector yang mempengaruhi pada setiap element yang sama (menggunakan element)</p>
+                p{
+                    color:red;
+                } <br>
+                <p>Class Selector <br>
+                Selector yang mempengaruhi pada setiap element dengan class tertentu (tanda . diikuti nama class)</p>
+                .nama_class{
+                    padding: 0px
+                } <br>
+                <p>ID Selector <br>
+                Selector yang mempengaruhi pada element dengan id tertentu (tanda # diikuti id)</p>
+                #id {
+                    color:white
+                } <br>
+                &lt;/style&gt; <br>
+            &lt;/head&gt; <br>
+        </code></p>
+        <p>Style juga bisa diterapkan langsung tanpa selector, yaitu dengan menyisipkan pada element tertentu (Inline Style)</p>
+        <p><code>
+            &lt;p style="color:white"&gt;
+            Ini paragraf
+        &lt;/p&gt;
+        </code></p>
+        <p>Untuk selector ini ada hirarki atau urutannya berdasarkan spesifiknya</p>
+        <ol>
+            <li>Inline Style i.e &lt;p style="color:white"&gt;</li>
+            <li>ID Selector i.e #id</li>
+            <li>Class Selector, Attribute Selector, dan Pseudo-class Selector i.e .class [attribute] :pseudo-class </li>
+            <li>Element Selector dan Pseudo-element Selector i.e h1 ::after </li>
+        </ol>
+    </div>
+    
+</body>
+</html>
